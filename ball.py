@@ -1,8 +1,10 @@
+import os
 import pygame, random
 
 class Ball:
     def __init__(self, pos):
-        self.image = pygame.image.load("ball.png​")
+        current_path = os.path.dirname(__file__)  # Where your .py file is located
+        self.image = pygame.image.load(os.path.join(current_path,"ball.png​"))
         scale = random.randint(1, 5)*10
         self.image = pygame.transform.smoothscale(self.image, (scale, scale))
         self.rect = self.image.get_rect()
