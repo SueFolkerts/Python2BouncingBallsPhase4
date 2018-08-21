@@ -1,7 +1,9 @@
 import sys
 import pygame
 from pygame.locals import *
+# New Follows *******************
 from ball import *
+#  NEW ABOVE **********************
 
 pygame.init()
 screen_info = pygame.display.Info()
